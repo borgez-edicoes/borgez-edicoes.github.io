@@ -1,118 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Borgez Edições | Vídeo Editor</title>
-<meta name="description" content="Edição de vídeo profissional, motion graphics e conteúdo que prende a atenção.">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:#08080b;color:#f5f5f7;font-family:Arial,sans-serif}
-header{height:85px;padding:0 9%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}
-.logo{font-size:25px;font-weight:800;letter-spacing:-2px}
-.logo span{color:#a477ff}
-nav{display:flex;gap:30px}
-nav a{color:#aaa;text-decoration:none;font-size:14px;transition:.3s}
-nav a:hover{color:#b38aff}
-.hero{min-height:85vh;padding:100px 12%;display:flex;align-items:center;gap:70px}
-.logo {
-    width: 170px;
-    height: 170px;
-    object-fit: contain;
-    flex-shrink: 0;
-    animation: appear 1.2s ease;
-}
-.mark span{color:#a477ff}
-.intro{max-width:650px;animation:slide .9s ease}
-.eyebrow{color:#ad83ff;text-transform:uppercase;letter-spacing:4px;font-size:12px;margin-bottom:20px}
-h1{font-size:clamp(38px,5vw,62px);line-height:1.08;margin-bottom:22px;letter-spacing:-2px}
-h1 span{color:#a477ff}
-.intro p{color:#aaa;line-height:1.8;font-size:16px;max-width:580px}
-.actions{display:flex;gap:15px;margin-top:32px;flex-wrap:wrap}
-.btn{padding:15px 23px;border-radius:7px;text-decoration:none;font-weight:bold;font-size:14px;transition:.3s}
-.primary{background:#9561ed;color:white}
-.primary:hover{background:#ad83ff;transform:translateY(-3px)}
-.secondary{border:1px solid #ffffff30;color:white}
-.secondary:hover{border-color:#a477ff}
-section{padding:95px 12%}
-.section-title{font-size:34px;margin-bottom:14px;letter-spacing:-1px}
-.section-desc{color:#888;margin-bottom:42px;line-height:1.7}
-.clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
-.client{padding:35px 20px;border:1px solid #ffffff12;border-radius:10px;text-align:center;color:#888;background:#ffffff04}
-.portfolio{background:#0d0d12}
-.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.video{aspect-ratio:16/9;background:linear-gradient(135deg,#191322,#101015);border:1px solid #ffffff15;border-radius:10px;display:grid;place-items:center;color:#777}
-.video span{font-size:13px}
-.contact{text-align:center}
-.contact p{color:#999;line-height:1.8;margin:15px auto 30px;max-width:500px}
-footer{padding:30px 12%;border-top:1px solid #ffffff12;color:#666;font-size:12px;text-align:center}
-@keyframes appear{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
-@keyframes slide{from{opacity:0;transform:translateX(35px)}to{opacity:1;transform:translateX(0)}}
-@media(max-width:700px){
-header{padding:0 6%}nav{gap:13px}nav a{font-size:12px}
-.hero{padding:75px 8%;flex-direction:column;align-items:flex-start;gap:35px}
-.logo {
-    width: 140px;
-    height: 140px;
-}
-section{padding:70px 8%}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Editor de Vídeo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0f0f0f; color: #fff; font-family: sans-serif; padding: 20px; }
+    header { text-align: center; padding: 40px 0; }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    p { color: #aaa; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+    .video-card { background: #1a1a1a; border-radius: 8px; overflow: hidden; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .info { padding: 15px; }
+  </style>
 </head>
 <body>
-<header>
-  <div class="logo">BORGEZ<span>.</span></div>
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#clientes">Clientes</a>
-    <a href="#portfolio">Portfólio</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
 
-<main>
-<section class="hero" id="sobre">
-  <img src="logo.png" alt="Borgez Edições" class="logo">
-  <div class="intro">
-    <div class="eyebrow">Edição de vídeo profissional</div>
-    <h1>Ideias que se tornam <span>experiências.</span></h1>
-    <p>Sou editor de vídeo há 9 anos, trabalhando em projetos pessoais e de amigos, e há aproximadamente 4 anos profissionalmente. Combino edição dinâmica, narrativa visual, ritmo e motion graphics para criar vídeos que prendem a atenção e valorizam cada conteúdo.</p>
-    <div class="actions">
-      <a class="btn primary" href="#portfolio">Conheça meu trabalho</a>
-      <a class="btn secondary" href="#contato">Entre em contato</a>
+  <header>
+    <h1>Seu Nome Aqui</h1>
+    <p>Editor de Vídeo | Criador de Conteúdo</p>
+  </header>
+
+  <main class="grid">
+    <!-- Vídeo 1 -->
+    <div class="video-card">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe>
+      </div>
+      <div class="info">
+        <h3>Nome do Projeto 1</h3>
+      </div>
     </div>
-  </div>
-</section>
 
-<section id="clientes">
-  <h2 class="section-title">Experiência e parcerias</h2>
-  <p class="section-desc">Alguns dos projetos e clientes com quem já trabalhei.</p>
-  <div class="clients">
-    <div class="client">Cliente 01</div>
-    <div class="client">Cliente 02</div>
-    <div class="client">Cliente 03</div>
-  </div>
-</section>
+    <!-- Vídeo 2 -->
+    <div class="video-card">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" allowfullscreen></iframe>
+      </div>
+      <div class="info">
+        <h3>Nome do Projeto 2</h3>
+      </div>
+    </div>
+  </main>
 
-<section class="portfolio" id="portfolio">
-  <h2 class="section-title">Meu portfólio</h2>
-  <p class="section-desc">Uma seleção de trabalhos que representam meu estilo de edição.</p>
-  <div class="videos">
-    <div class="video"><span>Vídeo 01 — adicionar trabalho</span></div>
-    <div class="video"><span>Vídeo 02 — adicionar trabalho</span></div>
-    <div class="video"><span>Vídeo 03 — adicionar trabalho</span></div>
-  </div>
-</section>
-
-<section class="contact" id="contato">
-  <h2 class="section-title">Vamos trabalhar juntos?</h2>
-  <p>Tem um projeto em mente? Entre em contato, conte um pouco sobre sua ideia e vamos conversar sobre como podemos tirar ela do papel.</p>
-  <a class="btn primary" href="mailto:SEUEMAIL">Solicitar orçamento</a>
-</section>
-</main>
-
-<footer>© 2026 Borgez Edições. Todos os direitos reservados.</footer>
 </body>
 </html>
