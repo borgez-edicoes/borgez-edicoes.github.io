@@ -17,7 +17,13 @@ nav{display:flex;gap:30px}
 nav a{color:#aaa;text-decoration:none;font-size:14px;transition:.3s}
 nav a:hover{color:#b38aff}
 .hero{min-height:85vh;padding:100px 12%;display:flex;align-items:center;gap:70px}
-.mark{width:190px;height:190px;flex-shrink:0;border:1px solid #9c68ff66;border-radius:35px;display:grid;place-items:center;font-size:110px;font-weight:900;color:#eee;box-shadow:0 0 65px #813bff25;animation:appear 1.2s ease}
+.logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    flex-shrink: 0;
+    animation: appear 1.2s ease;
+}
 .mark span{color:#a477ff}
 .intro{max-width:650px;animation:slide .9s ease}
 .eyebrow{color:#ad83ff;text-transform:uppercase;letter-spacing:4px;font-size:12px;margin-bottom:20px}
@@ -47,7 +53,10 @@ footer{padding:30px 12%;border-top:1px solid #ffffff12;color:#666;font-size:12px
 @media(max-width:700px){
 header{padding:0 6%}nav{gap:13px}nav a{font-size:12px}
 .hero{padding:75px 8%;flex-direction:column;align-items:flex-start;gap:35px}
-.mark{width:125px;height:125px;font-size:75px}
+.logo {
+    width: 100px;
+    height: 100px;
+}
 section{padding:70px 8%}
 }
 </style>
